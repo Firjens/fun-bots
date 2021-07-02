@@ -26,4 +26,4 @@ A big thanks also goes out to the following people 💌
 A team works around-the-clock to offer you an amazing bot experience. Got a question about something? Don't hestitate to ask them for help!
 
 - [@Joe_91](https://github.com/Joe91), the current project maintainer and lead developer
-- [@Firjens](https://github.com/Joe91), the documenter (documentalist? document man?) and developer
+- [@Firjens](https://github.com/Joe91), the documenter (documentalist? document man? Is he a Marvel superhero?) and developer
