@@ -1,0 +1,61 @@
+name: Bug Report
+description: Saw something that should not have happened? Report it as a bug report. Please use the 'Traces Bug Report' form for issues related to traces.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Before posting be sure that it's not a duplicate of any previous posted issues by using the search function.
+        Please note that we do not support outdated versions. Always use the latest stable release.
+
+  - type: input
+    id: bug-report-token
+    attributes:
+      label: Bug report token
+      description: |
+        Generate a bug report using the `!bugreport` command and enter the token or URL here.
+        This is a **required** step to create the bug report.
+        Note: when reporting multiple bugs, use the same bug report token as long as you've made no changes to the server.
+      placeholder: https://report.funbots.dev/7e1.....
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What happened what should not have happened? Please also tell us how we can reproduce it, the more information we have the faster and easier it is for us to fix this issue.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How can we reproduce and test it?
+      description: What is causing this issue? How can we reproduce it? If you have modified your configuration files, what did you modify?
+      placeholder: I did ... then I did ... and that's what caused ...
+    validations:
+      required: true
+  - type: textarea
+    id: what-was-expected
+    attributes:
+      label: What was expected?
+      description: What should have happened instead?
+      placeholder: What you should see instead.
+    validations:
+      required: true
+  - type: textarea
+    id: server-info
+    attributes:
+      label: Server information (if applicable)
+      description: What OS are you running? How much memory is available? What are your server hardware & software specs? Are you running any other mods?
+      placeholder: I am running on Windows x... my server has 4 GB of memory.... I'm only running fun-bots... I have an Intel Pentium Gold G6400 running 4 GHz...
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: I have checked the following... (if applicable)
+      description: Before submitting this bug report, checkout the contributing guidelines and our code of conduct.
+      options:
+        - label: I have read the [contribution guidelines on reporting bugs](https://github.com/Joe91/fun-bots/blob/master/.github/CONTRIBUTING.md#reporting-a-bug) and the [code of conduct](https://github.com/Joe91/fun-bots/blob/master/.github/CODE_OF_CONDUCT.md).
+          required: true
+        - label: I have tested and reproduced this bug without any other mods besides fun-bots.
+          required: false
